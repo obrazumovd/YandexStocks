@@ -8,10 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let networkeManager = NetworkManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        networkeManager.getMarketQuot()
     }
 
 

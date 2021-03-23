@@ -3,19 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C60BF9A2607E69C002DADBF /* TrendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BF992607E69C002DADBF /* TrendingModel.swift */; };
+		2C60BF9D2607EB00002DADBF /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BF9C2607EB00002DADBF /* MyExtension.swift */; };
+		2C60BFC626090552002DADBF /* IexStockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BFC526090552002DADBF /* IexStockModel.swift */; };
+		2C60BFC92609058C002DADBF /* IexStockObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BFC82609058C002DADBF /* IexStockObject.swift */; };
+		2C60BFCD26094393002DADBF /* StocksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BFCC26094392002DADBF /* StocksCell.swift */; };
 		2C6C3C2C2607AC85004C38E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C2B2607AC85004C38E6 /* AppDelegate.swift */; };
 		2C6C3C2E2607AC85004C38E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C2D2607AC85004C38E6 /* SceneDelegate.swift */; };
 		2C6C3C302607AC85004C38E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C2F2607AC85004C38E6 /* ViewController.swift */; };
 		2C6C3C332607AC85004C38E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6C3C312607AC85004C38E6 /* Main.storyboard */; };
 		2C6C3C352607AC8B004C38E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6C3C342607AC8B004C38E6 /* Assets.xcassets */; };
 		2C6C3C382607AC8B004C38E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6C3C362607AC8B004C38E6 /* LaunchScreen.storyboard */; };
+		2C6C3C4A2607AF0E004C38E6 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C492607AF0E004C38E6 /* MainPresenter.swift */; };
+		2C6C3C4E2607AF18004C38E6 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C4D2607AF18004C38E6 /* MainInteractor.swift */; };
+		2C6C3C522607AF2D004C38E6 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C512607AF2D004C38E6 /* MainRouter.swift */; };
+		2C6C3C552607AF4A004C38E6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C542607AF4A004C38E6 /* MainViewController.swift */; };
+		2C6C3C582607AF99004C38E6 /* MainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C572607AF99004C38E6 /* MainProtocol.swift */; };
+		2C6C3C5E2607B01D004C38E6 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C5D2607B01D004C38E6 /* StockModel.swift */; };
+		2C6C3C662607B0D8004C38E6 /* StockObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C652607B0D8004C38E6 /* StockObject.swift */; };
+		2C6C3C692607C187004C38E6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C682607C187004C38E6 /* NetworkManager.swift */; };
+		2C6C3C6C2607CD53004C38E6 /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C6B2607CD53004C38E6 /* RealmRepository.swift */; };
+		2C6C3C6F2607CFA5004C38E6 /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C6E2607CFA5004C38E6 /* StockData.swift */; };
+		2CC03658260A89940081FCDE /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C60BFD126094F5C002DADBF /* Montserrat-Bold.ttf */; };
+		2CC03659260A89940081FCDE /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C60BFD326095008002DADBF /* Montserrat-SemiBold.ttf */; };
+		BCFD59164000729FF4F1BBBF /* Pods_YandexStocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6344C06D2BC07B28EB28D2EF /* Pods_YandexStocks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C60BF992607E69C002DADBF /* TrendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingModel.swift; sourceTree = "<group>"; };
+		2C60BF9C2607EB00002DADBF /* MyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExtension.swift; sourceTree = "<group>"; };
+		2C60BFC526090552002DADBF /* IexStockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IexStockModel.swift; sourceTree = "<group>"; };
+		2C60BFC82609058C002DADBF /* IexStockObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IexStockObject.swift; sourceTree = "<group>"; };
+		2C60BFCC26094392002DADBF /* StocksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCell.swift; sourceTree = "<group>"; };
+		2C60BFD126094F5C002DADBF /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		2C60BFD326095008002DADBF /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		2C6C3C282607AC85004C38E6 /* YandexStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6C3C2B2607AC85004C38E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6C3C2D2607AC85004C38E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +49,19 @@
 		2C6C3C342607AC8B004C38E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6C3C372607AC8B004C38E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6C3C392607AC8B004C38E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6C3C492607AF0E004C38E6 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		2C6C3C4D2607AF18004C38E6 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		2C6C3C512607AF2D004C38E6 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		2C6C3C542607AF4A004C38E6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2C6C3C572607AF99004C38E6 /* MainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocol.swift; sourceTree = "<group>"; };
+		2C6C3C5D2607B01D004C38E6 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		2C6C3C652607B0D8004C38E6 /* StockObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockObject.swift; sourceTree = "<group>"; };
+		2C6C3C682607C187004C38E6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2C6C3C6B2607CD53004C38E6 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
+		2C6C3C6E2607CFA5004C38E6 /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		6344C06D2BC07B28EB28D2EF /* Pods_YandexStocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexStocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C98838B9663E10500682C40 /* Pods-YandexStocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexStocks.release.xcconfig"; path = "Target Support Files/Pods-YandexStocks/Pods-YandexStocks.release.xcconfig"; sourceTree = "<group>"; };
+		9C100ED969D86BD351659169 /* Pods-YandexStocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexStocks.debug.xcconfig"; path = "Target Support Files/Pods-YandexStocks/Pods-YandexStocks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFD59164000729FF4F1BBBF /* Pods_YandexStocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C60BFCB26094374002DADBF /*  View */ = {
+			isa = PBXGroup;
+			children = (
+				2C60BFCC26094392002DADBF /* StocksCell.swift */,
+			);
+			path = " View";
+			sourceTree = "<group>";
+		};
+		2C60BFD026094F47002DADBF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C60BFD126094F5C002DADBF /* Montserrat-Bold.ttf */,
+				2C60BFD326095008002DADBF /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		2C6C3C1F2607AC85004C38E6 = {
 			isa = PBXGroup;
 			children = (
 				2C6C3C2A2607AC85004C38E6 /* YandexStocks */,
 				2C6C3C292607AC85004C38E6 /* Products */,
+				3AF8E400C3604D751FCD0323 /* Pods */,
+				B47F31EF4C83E1646E086367 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +117,61 @@
 				2C6C3C2B2607AC85004C38E6 /* AppDelegate.swift */,
 				2C6C3C2D2607AC85004C38E6 /* SceneDelegate.swift */,
 				2C6C3C2F2607AC85004C38E6 /* ViewController.swift */,
+				2C6C3C682607C187004C38E6 /* NetworkManager.swift */,
+				2C6C3C6B2607CD53004C38E6 /* RealmRepository.swift */,
+				2C60BF992607E69C002DADBF /* TrendingModel.swift */,
+				2C60BF9C2607EB00002DADBF /* MyExtension.swift */,
+				2C6C3C482607AEE8004C38E6 /* MainModule */,
 				2C6C3C312607AC85004C38E6 /* Main.storyboard */,
 				2C6C3C342607AC8B004C38E6 /* Assets.xcassets */,
 				2C6C3C362607AC8B004C38E6 /* LaunchScreen.storyboard */,
 				2C6C3C392607AC8B004C38E6 /* Info.plist */,
+				2C60BFD026094F47002DADBF /* Fonts */,
 			);
 			path = YandexStocks;
+			sourceTree = "<group>";
+		};
+		2C6C3C482607AEE8004C38E6 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				2C6C3C572607AF99004C38E6 /* MainProtocol.swift */,
+				2C6C3C4D2607AF18004C38E6 /* MainInteractor.swift */,
+				2C6C3C492607AF0E004C38E6 /* MainPresenter.swift */,
+				2C6C3C512607AF2D004C38E6 /* MainRouter.swift */,
+				2C6C3C542607AF4A004C38E6 /* MainViewController.swift */,
+				2C60BFCB26094374002DADBF /*  View */,
+				2C6C3C5C2607B003004C38E6 /* Entity */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		2C6C3C5C2607B003004C38E6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2C6C3C5D2607B01D004C38E6 /* StockModel.swift */,
+				2C6C3C652607B0D8004C38E6 /* StockObject.swift */,
+				2C6C3C6E2607CFA5004C38E6 /* StockData.swift */,
+				2C60BFC526090552002DADBF /* IexStockModel.swift */,
+				2C60BFC82609058C002DADBF /* IexStockObject.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3AF8E400C3604D751FCD0323 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C100ED969D86BD351659169 /* Pods-YandexStocks.debug.xcconfig */,
+				6C98838B9663E10500682C40 /* Pods-YandexStocks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B47F31EF4C83E1646E086367 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6344C06D2BC07B28EB28D2EF /* Pods_YandexStocks.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C6C3C3C2607AC8B004C38E6 /* Build configuration list for PBXNativeTarget "YandexStocks" */;
 			buildPhases = (
+				640BF73660BA1DCC122E80E1 /* [CP] Check Pods Manifest.lock */,
 				2C6C3C242607AC85004C38E6 /* Sources */,
 				2C6C3C252607AC85004C38E6 /* Frameworks */,
 				2C6C3C262607AC85004C38E6 /* Resources */,
+				BBE0ABAF349EB47BA9E5D139 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC03658260A89940081FCDE /* Montserrat-Bold.ttf in Resources */,
+				2CC03659260A89940081FCDE /* Montserrat-SemiBold.ttf in Resources */,
 				2C6C3C382607AC8B004C38E6 /* LaunchScreen.storyboard in Resources */,
 				2C6C3C352607AC8B004C38E6 /* Assets.xcassets in Resources */,
 				2C6C3C332607AC85004C38E6 /* Main.storyboard in Resources */,
@@ -132,14 +243,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		640BF73660BA1DCC122E80E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YandexStocks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBE0ABAF349EB47BA9E5D139 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexStocks/Pods-YandexStocks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YandexStocks/Pods-YandexStocks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YandexStocks/Pods-YandexStocks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C6C3C242607AC85004C38E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6C3C692607C187004C38E6 /* NetworkManager.swift in Sources */,
+				2C6C3C4A2607AF0E004C38E6 /* MainPresenter.swift in Sources */,
+				2C60BF9D2607EB00002DADBF /* MyExtension.swift in Sources */,
+				2C6C3C522607AF2D004C38E6 /* MainRouter.swift in Sources */,
+				2C6C3C662607B0D8004C38E6 /* StockObject.swift in Sources */,
+				2C60BFC92609058C002DADBF /* IexStockObject.swift in Sources */,
+				2C6C3C582607AF99004C38E6 /* MainProtocol.swift in Sources */,
 				2C6C3C302607AC85004C38E6 /* ViewController.swift in Sources */,
 				2C6C3C2C2607AC85004C38E6 /* AppDelegate.swift in Sources */,
 				2C6C3C2E2607AC85004C38E6 /* SceneDelegate.swift in Sources */,
+				2C60BFC626090552002DADBF /* IexStockModel.swift in Sources */,
+				2C6C3C6C2607CD53004C38E6 /* RealmRepository.swift in Sources */,
+				2C60BFCD26094393002DADBF /* StocksCell.swift in Sources */,
+				2C6C3C5E2607B01D004C38E6 /* StockModel.swift in Sources */,
+				2C6C3C6F2607CFA5004C38E6 /* StockData.swift in Sources */,
+				2C6C3C4E2607AF18004C38E6 /* MainInteractor.swift in Sources */,
+				2C60BF9A2607E69C002DADBF /* TrendingModel.swift in Sources */,
+				2C6C3C552607AF4A004C38E6 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +451,7 @@
 		};
 		2C6C3C3D2607AC8B004C38E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C100ED969D86BD351659169 /* Pods-YandexStocks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +465,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.obrazumovd.YandexStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2C6C3C3E2607AC8B004C38E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C98838B9663E10500682C40 /* Pods-YandexStocks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.obrazumovd.YandexStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
