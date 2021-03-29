@@ -21,12 +21,12 @@ class StocksCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
         // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
@@ -38,13 +38,20 @@ class StocksCell: UITableViewCell {
         let symbol = iexStockObject.symbol
         DispatchQueue(label: "com.geek-is-stupid.queue.configure-cell").async { [weak self] in
             self?.logoView.imageFromServerURL(symbol: symbol, placeHolder: UIImage(named: "placeholder"))
+            
+        }
+        if let company = iexStockObject.company{
+                self.name.text = company.companyName
+
+        }else{
+            self.name.text = "Loading..."
+            NetworkManager().getCompany(symbol: symbol)
         }
             self.logoView?.layer.masksToBounds = true
             self.logoView?.layer.cornerRadius = 16
             self.symbol.text = iexStockObject.symbol
-            self.name.text = "name \(iexStockObject.symbol)"
             self.price.text = String(format: "%.2f", iexStockObject.close)
-            self.change.text = String(format: "%.2f (%.2f", iexStockObject.change, iexStockObject.changePercent) + "%)"
+            self.change.text = String(format: "%.2f$ (%.2f", iexStockObject.change, iexStockObject.changePercent) + "%)"
             self.change.textColor = iexStockObject.change > 0 ? UIColor(named: "green") : UIColor(named: "red")
             self.favoriteButtonOutlet.tintColor = iexStockObject.isFavorit ? UIColor(named: "yellow") : UIColor(named: "gray")
         

@@ -16,8 +16,8 @@ protocol ViewToPresenterProtocol: class{
     var interactor: PresenterToInteractorProtocol? {get set}
     var router: PresenterToRouterProtocol? {get set}
     func startFetchingStock()
-    func showMovieController(navigationController:UINavigationController)
-
+    func saveSymbolToHistory(symbol: String)
+    func showStockView(navigationController:UINavigationController, symbol : String)
 }
 
 protocol PresenterToViewProtocol: class{
@@ -27,12 +27,13 @@ protocol PresenterToViewProtocol: class{
 
 protocol PresenterToRouterProtocol: class {
     static func createModule()-> MainViewController
-    func pushToStockScreen(navigationConroller:UINavigationController)
+    func pushToStockScreen(navigationConroller:UINavigationController, symbol: String)
 }
 
 protocol PresenterToInteractorProtocol: class {
     var presenter:InteractorToPresenterProtocol? {get set}
     func fetchStock()
+    func saveSymbolToHistory(symbol: String)
 }
 
 protocol InteractorToPresenterProtocol: class {

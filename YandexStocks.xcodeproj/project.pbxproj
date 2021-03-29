@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2B6B36260BEC9D006E5993 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6B34260BEC9D006E5993 /* CollectionViewCell.swift */; };
+		2C2B6B37260BEC9D006E5993 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2B6B35260BEC9D006E5993 /* CollectionViewCell.xib */; };
+		2C2B6B3C260C61FC006E5993 /* EmptyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6B3B260C61FC006E5993 /* EmptyProtocol.swift */; };
+		2C2B6B40260C620F006E5993 /* EmptyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6B3F260C620F006E5993 /* EmptyInteractor.swift */; };
+		2C2B6B43260C621B006E5993 /* EmptyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6B42260C621B006E5993 /* EmptyPresenter.swift */; };
+		2C2B6B46260C6233006E5993 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6B45260C6233006E5993 /* EmptyView.swift */; };
 		2C60BF9A2607E69C002DADBF /* TrendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BF992607E69C002DADBF /* TrendingModel.swift */; };
 		2C60BF9D2607EB00002DADBF /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BF9C2607EB00002DADBF /* MyExtension.swift */; };
 		2C60BFC626090552002DADBF /* IexStockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BFC526090552002DADBF /* IexStockModel.swift */; };
 		2C60BFC92609058C002DADBF /* IexStockObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BFC82609058C002DADBF /* IexStockObject.swift */; };
 		2C60BFCD26094393002DADBF /* StocksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60BFCC26094392002DADBF /* StocksCell.swift */; };
+		2C6AB8E7260E857D002788DB /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB8E6260E857D002788DB /* StockView.swift */; };
+		2C6AB8F5260E8D9E002788DB /* IexCompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB8F4260E8D9E002788DB /* IexCompanyModel.swift */; };
+		2C6AB8F8260E8DAD002788DB /* IexCompanyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB8F7260E8DAD002788DB /* IexCompanyObject.swift */; };
+		2C6AB9012610D149002788DB /* StockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB9002610D148002788DB /* StockProtocol.swift */; };
+		2C6AB9042610D157002788DB /* StockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB9032610D157002788DB /* StockRouter.swift */; };
+		2C6AB9072610D16C002788DB /* StockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB9062610D16C002788DB /* StockInteractor.swift */; };
+		2C6AB90A2610D177002788DB /* StockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB9092610D177002788DB /* StockPresenter.swift */; };
+		2C6AB90D2610D61E002788DB /* ChartPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB90C2610D61E002788DB /* ChartPeriod.swift */; };
+		2C6AB9112610E80B002788DB /* ChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AB9102610E80B002788DB /* ChartDataModel.swift */; };
 		2C6C3C2C2607AC85004C38E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C2B2607AC85004C38E6 /* AppDelegate.swift */; };
 		2C6C3C2E2607AC85004C38E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C2D2607AC85004C38E6 /* SceneDelegate.swift */; };
 		2C6C3C302607AC85004C38E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C2F2607AC85004C38E6 /* ViewController.swift */; };
@@ -30,10 +45,18 @@
 		2C6C3C6F2607CFA5004C38E6 /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3C6E2607CFA5004C38E6 /* StockData.swift */; };
 		2CC03658260A89940081FCDE /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C60BFD126094F5C002DADBF /* Montserrat-Bold.ttf */; };
 		2CC03659260A89940081FCDE /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C60BFD326095008002DADBF /* Montserrat-SemiBold.ttf */; };
+		2CEB0B4A260D309900F42D3E /* HistoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB0B49260D309900F42D3E /* HistoryObject.swift */; };
+		2CEB0B4E260D386C00F42D3E /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEB0B4D260D386C00F42D3E /* EmptyView.xib */; };
 		BCFD59164000729FF4F1BBBF /* Pods_YandexStocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6344C06D2BC07B28EB28D2EF /* Pods_YandexStocks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2B6B34260BEC9D006E5993 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2C2B6B35260BEC9D006E5993 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		2C2B6B3B260C61FC006E5993 /* EmptyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyProtocol.swift; sourceTree = "<group>"; };
+		2C2B6B3F260C620F006E5993 /* EmptyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyInteractor.swift; sourceTree = "<group>"; };
+		2C2B6B42260C621B006E5993 /* EmptyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPresenter.swift; sourceTree = "<group>"; };
+		2C2B6B45260C6233006E5993 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		2C60BF992607E69C002DADBF /* TrendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingModel.swift; sourceTree = "<group>"; };
 		2C60BF9C2607EB00002DADBF /* MyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExtension.swift; sourceTree = "<group>"; };
 		2C60BFC526090552002DADBF /* IexStockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IexStockModel.swift; sourceTree = "<group>"; };
@@ -41,6 +64,15 @@
 		2C60BFCC26094392002DADBF /* StocksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCell.swift; sourceTree = "<group>"; };
 		2C60BFD126094F5C002DADBF /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		2C60BFD326095008002DADBF /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		2C6AB8E6260E857D002788DB /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		2C6AB8F4260E8D9E002788DB /* IexCompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IexCompanyModel.swift; sourceTree = "<group>"; };
+		2C6AB8F7260E8DAD002788DB /* IexCompanyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IexCompanyObject.swift; sourceTree = "<group>"; };
+		2C6AB9002610D148002788DB /* StockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockProtocol.swift; sourceTree = "<group>"; };
+		2C6AB9032610D157002788DB /* StockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRouter.swift; sourceTree = "<group>"; };
+		2C6AB9062610D16C002788DB /* StockInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInteractor.swift; sourceTree = "<group>"; };
+		2C6AB9092610D177002788DB /* StockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPresenter.swift; sourceTree = "<group>"; };
+		2C6AB90C2610D61E002788DB /* ChartPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPeriod.swift; sourceTree = "<group>"; };
+		2C6AB9102610E80B002788DB /* ChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataModel.swift; sourceTree = "<group>"; };
 		2C6C3C282607AC85004C38E6 /* YandexStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6C3C2B2607AC85004C38E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6C3C2D2607AC85004C38E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +91,8 @@
 		2C6C3C682607C187004C38E6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2C6C3C6B2607CD53004C38E6 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
 		2C6C3C6E2607CFA5004C38E6 /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		2CEB0B49260D309900F42D3E /* HistoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryObject.swift; sourceTree = "<group>"; };
+		2CEB0B4D260D386C00F42D3E /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		6344C06D2BC07B28EB28D2EF /* Pods_YandexStocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexStocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C98838B9663E10500682C40 /* Pods-YandexStocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexStocks.release.xcconfig"; path = "Target Support Files/Pods-YandexStocks/Pods-YandexStocks.release.xcconfig"; sourceTree = "<group>"; };
 		9C100ED969D86BD351659169 /* Pods-YandexStocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexStocks.debug.xcconfig"; path = "Target Support Files/Pods-YandexStocks/Pods-YandexStocks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,10 +110,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2B6B3A260C61C5006E5993 /* EmptyModule */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B6B3B260C61FC006E5993 /* EmptyProtocol.swift */,
+				2C2B6B3F260C620F006E5993 /* EmptyInteractor.swift */,
+				2C2B6B42260C621B006E5993 /* EmptyPresenter.swift */,
+				2C2B6B45260C6233006E5993 /* EmptyView.swift */,
+				2CEB0B4D260D386C00F42D3E /* EmptyView.xib */,
+				2CEB0B48260D307E00F42D3E /* Entity */,
+			);
+			path = EmptyModule;
+			sourceTree = "<group>";
+		};
 		2C60BFCB26094374002DADBF /*  View */ = {
 			isa = PBXGroup;
 			children = (
 				2C60BFCC26094392002DADBF /* StocksCell.swift */,
+				2C2B6B34260BEC9D006E5993 /* CollectionViewCell.swift */,
+				2C2B6B35260BEC9D006E5993 /* CollectionViewCell.xib */,
 			);
 			path = " View";
 			sourceTree = "<group>";
@@ -91,6 +140,28 @@
 				2C60BFD326095008002DADBF /* Montserrat-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2C6AB8E5260E8551002788DB /* StockModule */ = {
+			isa = PBXGroup;
+			children = (
+				2C6AB9002610D148002788DB /* StockProtocol.swift */,
+				2C6AB9032610D157002788DB /* StockRouter.swift */,
+				2C6AB9062610D16C002788DB /* StockInteractor.swift */,
+				2C6AB9092610D177002788DB /* StockPresenter.swift */,
+				2C6AB8E6260E857D002788DB /* StockView.swift */,
+				2C6AB8EA260E85B3002788DB /* Entity */,
+			);
+			path = StockModule;
+			sourceTree = "<group>";
+		};
+		2C6AB8EA260E85B3002788DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2C6AB90C2610D61E002788DB /* ChartPeriod.swift */,
+				2C6AB9102610E80B002788DB /* ChartDataModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		2C6C3C1F2607AC85004C38E6 = {
@@ -121,6 +192,8 @@
 				2C6C3C6B2607CD53004C38E6 /* RealmRepository.swift */,
 				2C60BF992607E69C002DADBF /* TrendingModel.swift */,
 				2C60BF9C2607EB00002DADBF /* MyExtension.swift */,
+				2C6AB8E5260E8551002788DB /* StockModule */,
+				2C2B6B3A260C61C5006E5993 /* EmptyModule */,
 				2C6C3C482607AEE8004C38E6 /* MainModule */,
 				2C6C3C312607AC85004C38E6 /* Main.storyboard */,
 				2C6C3C342607AC8B004C38E6 /* Assets.xcassets */,
@@ -153,6 +226,16 @@
 				2C6C3C6E2607CFA5004C38E6 /* StockData.swift */,
 				2C60BFC526090552002DADBF /* IexStockModel.swift */,
 				2C60BFC82609058C002DADBF /* IexStockObject.swift */,
+				2C6AB8F4260E8D9E002788DB /* IexCompanyModel.swift */,
+				2C6AB8F7260E8DAD002788DB /* IexCompanyObject.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2CEB0B48260D307E00F42D3E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2CEB0B49260D309900F42D3E /* HistoryObject.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -235,6 +318,8 @@
 			files = (
 				2CC03658260A89940081FCDE /* Montserrat-Bold.ttf in Resources */,
 				2CC03659260A89940081FCDE /* Montserrat-SemiBold.ttf in Resources */,
+				2C2B6B37260BEC9D006E5993 /* CollectionViewCell.xib in Resources */,
+				2CEB0B4E260D386C00F42D3E /* EmptyView.xib in Resources */,
 				2C6C3C382607AC8B004C38E6 /* LaunchScreen.storyboard in Resources */,
 				2C6C3C352607AC8B004C38E6 /* Assets.xcassets in Resources */,
 				2C6C3C332607AC85004C38E6 /* Main.storyboard in Resources */,
@@ -290,23 +375,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6AB8E7260E857D002788DB /* StockView.swift in Sources */,
+				2C6AB90D2610D61E002788DB /* ChartPeriod.swift in Sources */,
+				2C2B6B43260C621B006E5993 /* EmptyPresenter.swift in Sources */,
 				2C6C3C692607C187004C38E6 /* NetworkManager.swift in Sources */,
 				2C6C3C4A2607AF0E004C38E6 /* MainPresenter.swift in Sources */,
 				2C60BF9D2607EB00002DADBF /* MyExtension.swift in Sources */,
+				2C2B6B46260C6233006E5993 /* EmptyView.swift in Sources */,
 				2C6C3C522607AF2D004C38E6 /* MainRouter.swift in Sources */,
 				2C6C3C662607B0D8004C38E6 /* StockObject.swift in Sources */,
+				2C6AB9012610D149002788DB /* StockProtocol.swift in Sources */,
+				2CEB0B4A260D309900F42D3E /* HistoryObject.swift in Sources */,
 				2C60BFC92609058C002DADBF /* IexStockObject.swift in Sources */,
+				2C6AB9072610D16C002788DB /* StockInteractor.swift in Sources */,
+				2C6AB8F5260E8D9E002788DB /* IexCompanyModel.swift in Sources */,
 				2C6C3C582607AF99004C38E6 /* MainProtocol.swift in Sources */,
+				2C2B6B3C260C61FC006E5993 /* EmptyProtocol.swift in Sources */,
 				2C6C3C302607AC85004C38E6 /* ViewController.swift in Sources */,
 				2C6C3C2C2607AC85004C38E6 /* AppDelegate.swift in Sources */,
+				2C6AB8F8260E8DAD002788DB /* IexCompanyObject.swift in Sources */,
 				2C6C3C2E2607AC85004C38E6 /* SceneDelegate.swift in Sources */,
+				2C2B6B36260BEC9D006E5993 /* CollectionViewCell.swift in Sources */,
 				2C60BFC626090552002DADBF /* IexStockModel.swift in Sources */,
 				2C6C3C6C2607CD53004C38E6 /* RealmRepository.swift in Sources */,
 				2C60BFCD26094393002DADBF /* StocksCell.swift in Sources */,
 				2C6C3C5E2607B01D004C38E6 /* StockModel.swift in Sources */,
+				2C2B6B40260C620F006E5993 /* EmptyInteractor.swift in Sources */,
+				2C6AB9042610D157002788DB /* StockRouter.swift in Sources */,
 				2C6C3C6F2607CFA5004C38E6 /* StockData.swift in Sources */,
 				2C6C3C4E2607AF18004C38E6 /* MainInteractor.swift in Sources */,
 				2C60BF9A2607E69C002DADBF /* TrendingModel.swift in Sources */,
+				2C6AB90A2610D177002788DB /* StockPresenter.swift in Sources */,
+				2C6AB9112610E80B002788DB /* ChartDataModel.swift in Sources */,
 				2C6C3C552607AF4A004C38E6 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

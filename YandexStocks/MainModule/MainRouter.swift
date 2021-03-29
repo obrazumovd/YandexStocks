@@ -10,14 +10,13 @@ import UIKit
 
 
 class MainRouter:PresenterToRouterProtocol{
-    
-    
-    
     static func createModule() -> MainViewController {
         
         let view = mainstoryboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
         
+        
         let presenter: ViewToPresenterProtocol & InteractorToPresenterProtocol = MainPresenter()
+        
         let interactor: PresenterToInteractorProtocol = MainInteractor()
         let router:PresenterToRouterProtocol = MainRouter()
         
@@ -35,8 +34,9 @@ class MainRouter:PresenterToRouterProtocol{
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
     
-    func pushToStockScreen(navigationConroller: UINavigationController) {
-        
+    func pushToStockScreen(navigationConroller: UINavigationController, symbol: String) {
+        let stockModule = StockRouter.createModule(symbol: symbol)
+        navigationConroller.pushViewController(stockModule,animated: true)
     }
 
 }

@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 
 class MainPresenter : ViewToPresenterProtocol{
+
     var view: PresenterToViewProtocol?
     var interactor: PresenterToInteractorProtocol?
     var router: PresenterToRouterProtocol?
@@ -18,13 +19,18 @@ class MainPresenter : ViewToPresenterProtocol{
         interactor?.fetchStock()
     }
     
-    func showMovieController(navigationController: UINavigationController) {
-        router?.pushToStockScreen(navigationConroller: navigationController)
+    func showStockView(navigationController: UINavigationController, symbol: String) {
+        router?.pushToStockScreen(navigationConroller: navigationController, symbol: symbol)
+    }
+    func saveSymbolToHistory(symbol: String) {
+        interactor?.saveSymbolToHistory(symbol: symbol)
     }
     
+
 }
 
 extension MainPresenter: InteractorToPresenterProtocol{
+    
     func stockFetchedSuccess(stockArray: List<IexStockObject>) {
         view?.showStock(stockArray: stockArray)
     }
@@ -32,5 +38,4 @@ extension MainPresenter: InteractorToPresenterProtocol{
     func stockFetchFailed() {
         view?.showError()
     }
-    
 }

@@ -18,6 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let main = MainRouter.createModule()
             let navigation = UINavigationController()
+            
+            navigation.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigation.navigationBar.shadowImage = UIImage()
+            navigation.view.backgroundColor = .clear
+            
+            
+            
             navigation.viewControllers = [main]
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = navigation

@@ -19,6 +19,12 @@ enum UrlIexapis{
     static let quote = "/qu/quote"
 }
 
+enum IexUrl{
+    static let previous = "market/previous"
+    static let company = "/company"
+    static let chart = "/chart/"
+}
+
 class NetworkManager {
     
     let headers: HTTPHeaders = [
@@ -30,56 +36,31 @@ class NetworkManager {
     
     
     
-    let apiIexcloud = "https://sandbox.iexapis.com"
-    let tokenIexcloud = "Tpk_a2e65711c5d647e18fb4aecab2e586a6"
+    let apiIexcloud = "https://sandbox.iexapis.com/stable/stock/"
+    let tokenIexcloud = "/?token=Tpk_a2e65711c5d647e18fb4aecab2e586a6"
+    
+    
 
     
-    func getTrending(){
+    func getTrending(completion: @escaping(_ quotes: [String], _ error: String?)->()){
         
         let url = apiRoot + UrlMoboum.trending
         
-        AF.request(url, method: .get, headers: headers){ $0.timeoutInterval = 10 }.responseData{ [weak self] response in
+        AF.request(url, method: .get, headers: headers){ $0.timeoutInterval = 10 }.responseData{ response in
             guard let data = response.data else {return}
             do{
                 let trending = try JSONDecoder().decode([TrendingModel].self, from: data)
-//                print(trending)
                 guard let quotes = trending.first?.quotes else{return}
-                self?.getQuot(quotes: quotes)
-                                
+                completion(quotes, nil)
             } catch let error{
+                completion([], error.localizedDescription)
                 print("Error serelization meUpdate", error)
             }
         }
     }
-//    alphavantage 7VSUTKLHR5929E40
-    func getQuot(quotes: [String]){
-//        let reqLimit = 100
-//        let url = apiIexcloud + UrlIexapis.quote
-//        for reqArray in quotes.chunked(into: reqLimit){
-//            let quotesString = reqArray.joined(separator: ",")
-//            let param = ["symbol" : quotesString]
-//            let url = "https://financialmodelingprep.com/api/v3/quote/\(quotesString)?apikey=19856e2bd96f42595a86ccedb5fa1f3a"
-            let url = "https://sandbox.iexapis.com/stable/stock/market/previous/?token=Tpk_a2e65711c5d647e18fb4aecab2e586a6"
-            AF.request(url, method: .get){ $0.timeoutInterval = 10 }.responseData{ response in
-                guard let data = response.data else {return}
-                do{
-                    if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                        // try to read out a string array
-//                        print(json)
-                    }
-//                    let stock = try JSONDecoder().decode(StockModel.self, from: data)
-//                    print(stock)
-                                    
-                } catch let error{
-                    print("Error serelization meUpdate", error)
-                }
-//            }
-//            break
-        }
-    }
         
         func getMarketQuot(){
-            let url = "https://sandbox.iexapis.com/stable/stock/market/previous/?token=Tpk_a2e65711c5d647e18fb4aecab2e586a6"
+            let url = apiIexcloud + IexUrl.previous + tokenIexcloud
             AF.request(url, method: .get){ $0.timeoutInterval = 20 }.responseData{ response in
                 guard let data = response.data else {return}
                 do{
@@ -94,13 +75,50 @@ class NetworkManager {
                         print("DEBAG: pars market quot complite")
                     })
                 } catch let error{
-                    print("Error serelization meUpdate", error)
+                    print("Error serelization market quot", error)
                 }
         }
     }
     
+    func getCompany(symbol: String){
+        let url = apiIexcloud + symbol + IexUrl.company + tokenIexcloud
+        AF.request(url, method: .get){ $0.timeoutInterval = 20 }.responseData{ response in
+            guard let data = response.data else {return}
+            do{
+                let company = try JSONDecoder().decode(IexCompanyModel.self, from: data)
+                
+                DispatchQueue.background(background: {
+                    let companyObject = IexCompanyObject(iexCompanyModel: company)
+                    let realm = try! Realm()
+                    guard let iexStockObject = realm.objects(IexStockObject.self).filter("symbol = %@", companyObject.symbol).first else {return}
+                    try! realm.safeWrite {
+                        realm.add(companyObject, update: .modified)
+                        iexStockObject.company = companyObject
+                    }
+                }, completion:{
+                    print("DEBAG: pars company \(symbol) complite")
+                })
+            } catch let error{
+                print("Error serelization company  \(symbol)", error)
+            }
+    }
+    }
+    
+    func getChart(symbol: String, period: String, completion: @escaping([ChartDataModel])->()){
+        let url = apiIexcloud + symbol + IexUrl.chart + period + tokenIexcloud + "&chartCloseOnly=true"
+        AF.request(url, method: .get){ $0.timeoutInterval = 20 }.responseData{ response in
+            guard let data = response.data else {return}
+            do{
+                let charts = try JSONDecoder().decode([ChartDataModel].self, from: data)
+                completion(charts)               
+            } catch let error{
+                print("Error serelization company  \(symbol)", error)
+            }
+    }
+    }
+    
+    
     func getLogo(symbol: String, completion: @escaping(UIImage?)->()){
-//        let url = "https://sandbox.iexapis.com/stable/stock/\(symbol)/logo/?token=Tpk_a2e65711c5d647e18fb4aecab2e586a6"
         let url = "https://storage.googleapis.com/iex/api/logos/\(symbol).png"
         AF.request(url, method: .get){ $0.timeoutInterval = 20 }.responseData{ response in
             guard let data = response.data else{

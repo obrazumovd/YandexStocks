@@ -29,7 +29,6 @@ class StockData {
     
     private func activateStockToken(){
         stockToken = stockResult.observe{[weak self] change in
-//            print("Debag: \(change)")
             guard let list = self?.stockResult.list else {return}
             self?.stocks = list
             self?.delegate?.fetchStockData()
